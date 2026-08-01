@@ -19,38 +19,40 @@ import ContactSection from "./components/contact/ContactSection";
 // import AIConsultant from "./components/common/AIConsultant";
 
 export default function App() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  // const [theme, setTheme] = useState<"light" | "dark">("light");
 
-  // Load saved theme on mount
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("estuscia-theme") as "light" | "dark" | null;
-    if (savedTheme) {
-      setTheme(savedTheme);
-    } else {
-      setTheme("light");
-    }
-  }, []);
+  // // Load saved theme on mount
+  // useEffect(() => {
+  //   const savedTheme = localStorage.getItem("estuscia-theme") as "light" | "dark" | null;
+  //   if (savedTheme) {
+  //     setTheme(savedTheme);
+  //   } else {
+  //     setTheme("light");
+  //   }
+  // }, []);
 
-  // Update root element classes when theme state changes
-  useEffect(() => {
-    const root = document.documentElement;
-    if (theme === "dark") {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-    localStorage.setItem("estuscia-theme", theme);
-  }, [theme]);
+  // // Update root element classes when theme state changes
+  // useEffect(() => {
+  //   const root = document.documentElement;
+  //   if (theme === "dark") {
+  //     root.classList.add("dark");
+  //   } else {
+  //     root.classList.remove("dark");
+  //   }
+  //   localStorage.setItem("estuscia-theme", theme);
+  // }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
-  };
+  // const toggleTheme = () => {
+  //   setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  // };
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 font-sans transition-colors duration-300" id="app-root">
       
       {/* 1. Header Navigation */}
-      <Header theme={theme} toggleTheme={toggleTheme} />
+      <Header 
+      // theme={theme} toggleTheme={toggleTheme} 
+      />
 
       {/* 2. Main Corporate Layout Sections */}
       <main>
@@ -85,7 +87,7 @@ export default function App() {
         <ProcessSection />
 
         {/* Section 11: Ecosystem Stats */}
-        <StatsSection />
+        {/* <StatsSection /> */}
 
         {/* Section 12: Client Testimonials */}
         {/* <TestimonialsSection /> */}

@@ -2,12 +2,14 @@ import { useState } from "react";
 import { ChevronRight, Sun, Moon, Menu, X, Globe, Sparkles } from "lucide-react";
 import logoImg from "../../assets/images/logo.png";
 
-interface HeaderProps {
-  theme: "light" | "dark";
-  toggleTheme: () => void;
-}
+// interface HeaderProps {
+//   theme: "light" | "dark";
+//   toggleTheme: () => void;
+// }
 
-export default function Header({ theme, toggleTheme }: HeaderProps) {
+export default function Header(
+  // { theme, toggleTheme }: HeaderProps
+) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
@@ -81,14 +83,14 @@ export default function Header({ theme, toggleTheme }: HeaderProps) {
           <div className="flex items-center gap-3">
 
             {/* Dark Mode Toggle */}
-            <button
+            {/* <button
               onClick={toggleTheme}
               className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 hover:border-purple-400 transition-all cursor-pointer"
               aria-label="Toggle Theme"
               title={theme === "light" ? "Switch to Dark Mode" : "Switch to Light Mode"}
             >
               {theme === "light" ? <Moon className="h-4 w-4 text-purple-400" /> : <Sun className="h-4 w-4 text-amber-400" />}
-            </button>
+            </button> */}
 
             {/* Contact Us CTA Button */}
             <button

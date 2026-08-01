@@ -37,7 +37,7 @@ const leadershipTeam: (LeadershipMember & { initials: string })[] = [
   },
   {
     id: "sales-manager",
-    name: "Anirudh",
+    name: "Anirudh Menon",
     role: "Sales Team Manager",
     bio: "Leads the Sales Department by managing the sales team, developing sales strategies, monitoring performance, achieving revenue targets, and strengthening client relationships. Responsible for team productivity, customer acquisition, and delivering consistent business growth through effective sales execution.",
     avatarUrl: "", // Ready for future photo upload
