@@ -1,5 +1,9 @@
 import { Linkedin, Mail, Sparkles, User, ImagePlus } from "lucide-react";
 import { LeadershipMember } from "../../types";
+import Shahzeen from "../../assets/images/Shahzeen.png";
+import Akshay from "../../assets/images/Akshay.png";
+import Riza from "../../assets/images/Riza.jpeg";
+import Anirudh from "../../assets/images/Anirudh.png";
 
 const leadershipTeam: (LeadershipMember & { initials: string })[] = [
   {
@@ -7,45 +11,65 @@ const leadershipTeam: (LeadershipMember & { initials: string })[] = [
     name: "Shahzeen Khalid",
     role: "Founder & Chief Executive Officer (CEO)",
     bio: "Leading the vision, strategy, and long-term growth of Estuscia Group. Responsible for building the organization’s ecosystem, driving innovation, creating strategic partnerships, and ensuring every venture aligns with the company’s mission of creating sustainable businesses with global impact.",
-    avatarUrl: "", // Ready for future photo upload
+    avatarUrl: Shahzeen,
     initials: "SK",
     linkedInUrl: "https://linkedin.com",
     emailUrl: "mailto:ceo@estuscia.com",
-    expertise: ["Ecosystem Strategy", "Global Expansion", "Venture Building", "Executive Leadership"]
+    expertise: [
+      "Ecosystem Strategy",
+      "Global Expansion",
+      "Venture Building",
+      "Executive Leadership",
+    ],
   },
   {
     id: "coo",
     name: "Akshay M A",
     role: "Chief Operating Officer (COO)",
     bio: "Oversees the company’s daily operations, legal compliance, financial administration, and business execution. Ensures operational efficiency, regulatory compliance, resource management, and seamless coordination across all departments to support sustainable organizational growth.",
-    avatarUrl: "", // Ready for future photo upload
+    avatarUrl: Akshay,
     initials: "AM",
     linkedInUrl: "https://linkedin.com",
     emailUrl: "mailto:coo@estuscia.com",
-    expertise: ["Operations Management", "Legal Compliance", "Financial Admin", "Resource Execution"]
+    expertise: [
+      "Operations Management",
+      "Legal Compliance",
+      "Financial Admin",
+      "Resource Execution",
+    ],
   },
   {
     id: "cos",
     name: "Riza Mathiyam",
     role: "Chief of Staff (COS)",
     bio: "Works closely with the CEO to execute strategic initiatives, coordinate cross-functional teams, monitor organizational priorities, and improve internal communication. Acts as the central link between leadership and departments, ensuring decisions are implemented effectively and business objectives remain on track.",
-    avatarUrl: "", // Ready for future photo upload
+    avatarUrl: Riza,
     initials: "RM",
     linkedInUrl: "https://linkedin.com",
     emailUrl: "mailto:cos@estuscia.com",
-    expertise: ["Strategic Execution", "Cross-Functional Ops", "Priority Alignment", "Internal Governance"]
+    expertise: [
+      "Strategic Execution",
+      "Cross-Functional Ops",
+      "Priority Alignment",
+      "Internal Governance",
+    ],
   },
   {
     id: "sales-manager",
     name: "Anirudh Menon",
     role: "Sales Team Manager",
     bio: "Leads the Sales Department by managing the sales team, developing sales strategies, monitoring performance, achieving revenue targets, and strengthening client relationships. Responsible for team productivity, customer acquisition, and delivering consistent business growth through effective sales execution.",
-    avatarUrl: "", // Ready for future photo upload
+    avatarUrl: Anirudh,
     initials: "AN",
     linkedInUrl: "https://linkedin.com",
     emailUrl: "mailto:sales@estuscia.com",
-    expertise: ["Sales Strategy", "Revenue Targets", "Client Acquisition", "Team Productivity"]
-  }
+    expertise: [
+      "Sales Strategy",
+      "Revenue Targets",
+      "Client Acquisition",
+      "Team Productivity",
+    ],
+  },
 ];
 
 export default function LeadershipSection() {
