@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Send, CheckCircle2, ShieldAlert, Phone, Mail, MessageSquareCode, Trash2, CheckCircle, RefreshCw, Lock, Eye, EyeOff } from "lucide-react";
 import { LeadSubmission } from "../../types";
+import emailjs from "@emailjs/browser";
 
 interface LeadFormProps {
   prefilledAmount: number | null;
@@ -48,49 +49,36 @@ export default function LeadForm({ prefilledAmount, onSuccess }: LeadFormProps) 
   }, [phone, sameAsPhone]);
 
   const handleSubmit = async (e: React.FormEvent) => {
+    console.log("Heyyyyyyyyyyyyyyyyyyyyyyuuuuuuuuuuuuuuuuuuuuuuuu")
     e.preventDefault();
     setLoading(true);
     setError(null);
+console.log("Heyyyyyyyyyyyyyyyyyyyyyy")
 
     const investmentAmount = Number(amount);
-    if (isNaN(investmentAmount) || investmentAmount < 10000) {
-      setError("The minimum investment amount is ₹10,000 for our capital growth models.");
-      setLoading(false);
-      return;
-    }
-
     try {
-      const response = await fetch("/api/leads", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      await emailjs.send(
+        "service_estuscia2026",
+        "template_estuscia2026",
+        {
+          full_name: fullName,
+          email: email,
+          phone: phone,
+          whatsapp: whatsapp || phone,
+          investment: investmentAmount,
+          notes: notes || "No notes",
+          date: new Date().toLocaleString(),
         },
-        body: JSON.stringify({
-          fullName,
-          email,
-          phone,
-          whatsapp: whatsapp || undefined,
-          investmentAmount,
-          notes,
-        }),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || "Failed to submit lead. Please try again.");
-      }
+        "EstusciaGroup"
+      );
 
       setSubmitted(true);
       onSuccess();
-      
-      // Fetch latest leads if admin panel is logged in
-      if (isAuthorized) {
-        fetchLeads();
-      }
+
     } catch (err: any) {
-      setError(err.message || "Something went wrong.");
-    } finally {
+      setError("Unable to send inquiry. Please try again.");
+    }
+    finally {
       setLoading(false);
     }
   };
@@ -164,9 +152,9 @@ export default function LeadForm({ prefilledAmount, onSuccess }: LeadFormProps) 
   return (
     <section className="py-16 bg-white dark:bg-slate-900 transition-colors duration-300" id="lead-form-section">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
+
           {/* Left Panel: Program Details & Contact Channels */}
           <div className="lg:col-span-5 space-y-8">
             <div>
@@ -181,9 +169,9 @@ export default function LeadForm({ prefilledAmount, onSuccess }: LeadFormProps) 
 
             <div className="space-y-4">
               <h3 className="text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">Direct Contact Details</h3>
-              
+
               {/* Phone Channel */}
-              <a 
+              <a
                 href="tel:+917907046955"
                 className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/40 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors border border-slate-100 dark:border-slate-800"
               >
@@ -197,7 +185,7 @@ export default function LeadForm({ prefilledAmount, onSuccess }: LeadFormProps) 
               </a>
 
               {/* Email Channel */}
-              <a 
+              <a
                 href="mailto:estusciagroup@gmail.com"
                 className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/40 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors border border-slate-100 dark:border-slate-800"
               >
@@ -222,7 +210,7 @@ export default function LeadForm({ prefilledAmount, onSuccess }: LeadFormProps) 
 
           {/* Right Panel: Interactive Submission Form / Success State */}
           <div className="lg:col-span-7 bg-slate-50 dark:bg-slate-850/40 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-8 relative transition-colors">
-            
+
             {submitted ? (
               /* Success State */
               <div className="text-center py-12 space-y-6">
@@ -432,7 +420,7 @@ export default function LeadForm({ prefilledAmount, onSuccess }: LeadFormProps) 
                     <CheckCircle className="h-4 w-4 text-emerald-400" />
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-200">Active Investor Leads ({leads.length})</span>
                   </div>
-                  <button 
+                  <button
                     onClick={fetchLeads}
                     disabled={refreshing}
                     className="p-1 hover:bg-slate-800 rounded-md transition-colors"
@@ -465,7 +453,7 @@ export default function LeadForm({ prefilledAmount, onSuccess }: LeadFormProps) 
 
                         <div className="flex items-center justify-between pt-1 border-t border-slate-700/40 text-[10px]">
                           <span className="text-slate-400">{new Date(lead.createdAt).toLocaleString()}</span>
-                          
+
                           <div className="flex items-center gap-2">
                             {/* Status controls */}
                             <select
