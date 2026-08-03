@@ -1,16 +1,17 @@
 import { useState, FormEvent } from "react";
-import { 
-  Building2, 
-  Mail, 
-  Phone, 
-  Clock, 
-  Send, 
-  CheckCircle2, 
-  Sparkles, 
+import {
+  Building2,
+  Mail,
+  Phone,
+  Clock,
+  Send,
+  CheckCircle2,
+  Sparkles,
   MapPin,
   ShieldCheck
 } from "lucide-react";
 import { LeadSubmission } from "../../types";
+import emailjs from "@emailjs/browser";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -25,30 +26,67 @@ export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
     setLoading(true);
 
-    // Simulate fast API processing
-    setTimeout(() => {
-      setLoading(false);
-      setSubmitted(true);
-      // Save locally for admin review
-      const existingLeads = JSON.parse(localStorage.getItem("estuscia_leads") || "[]");
+    try {
+      await emailjs.send(
+        "service_estuscia2026",
+        "template_estuscia2026",
+        {
+          full_name: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          organization: formData.organization || "Not Provided",
+          inquiry_type: formData.inquiryType,
+          message: formData.message,
+          date: new Date().toLocaleString(),
+        },
+        "8sMHg-Kgo0C5ooSg-"
+      );
+
+      // Save locally (optional)
+      const existingLeads = JSON.parse(
+        localStorage.getItem("estuscia_leads") || "[]"
+      );
+
       const newLead: LeadSubmission = {
         id: "lead-" + Date.now(),
         ...formData,
         createdAt: new Date().toISOString(),
-        status: "new"
+        status: "new",
       };
-      localStorage.setItem("estuscia_leads", JSON.stringify([newLead, ...existingLeads]));
-    }, 600);
+
+      localStorage.setItem(
+        "estuscia_leads",
+        JSON.stringify([newLead, ...existingLeads])
+      );
+
+      setSubmitted(true);
+
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        organization: "",
+        inquiryType: "General Inquiry",
+        message: "",
+      });
+
+    } catch (err) {
+      console.error("EmailJS Error:", err);
+      alert("Unable to send email.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <section id="contact" className="py-20 lg:py-28 bg-white dark:bg-slate-950 transition-colors">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-purple-700 dark:text-purple-300 bg-purple-50 dark:bg-purple-950/80 border border-purple-200 dark:border-purple-800">
@@ -64,7 +102,7 @@ export default function ContactSection() {
         </div>
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
+
           {/* Corporate Info Column */}
           <div className="lg:col-span-5 space-y-8 p-8 rounded-3xl bg-slate-950 text-white border border-purple-500/30 shadow-2xl">
             <div>
@@ -76,7 +114,7 @@ export default function ContactSection() {
             </div>
 
             <div className="space-y-6 pt-4 border-t border-slate-800">
-              
+
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-2xl bg-purple-950 text-purple-400 border border-purple-800 shrink-0">
                   <Building2 className="h-5 w-5" />
@@ -168,7 +206,7 @@ export default function ContactSection() {
                     <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1.5">
                       Full Name *
                     </label>
-                    <input 
+                    <input
                       type="text"
                       required
                       placeholder="e.g. Eleanor Vance"
@@ -182,7 +220,7 @@ export default function ContactSection() {
                     <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1.5">
                       Corporate Email *
                     </label>
-                    <input 
+                    <input
                       type="email"
                       required
                       placeholder="name@company.com"
@@ -198,7 +236,7 @@ export default function ContactSection() {
                     <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1.5">
                       Phone Number *
                     </label>
-                    <input 
+                    <input
                       type="tel"
                       required
                       placeholder="+1 (555) 000-0000"
@@ -212,7 +250,7 @@ export default function ContactSection() {
                     <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1.5">
                       Organization / Company
                     </label>
-                    <input 
+                    <input
                       type="text"
                       placeholder="Company or Startup Name"
                       value={formData.organization}

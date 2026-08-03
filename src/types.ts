@@ -17,8 +17,8 @@ export interface LeadSubmission {
   organization?: string;
   inquiryType: 'Financial Services' | 'Business Consulting' | 'Tech & Media' | 'Global Trade' | 'Venture Incubator' | 'General Inquiry';
   message: string;
-  investmentAmount:string;
-  notes:string;
+  // investmentAmount:string;
+  // notes:string;
   createdAt: string;
   status: 'new' | 'in_review' | 'contacted';
 }
