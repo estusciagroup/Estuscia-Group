@@ -53,7 +53,7 @@ export default function WhyChooseUs() {
             <span>Competitive Advantage</span>
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Why Choose Estuscia Group LLP
+            Why Choose Estuscia Group
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
             We provide the strategic framework, financial liquidity, technological backbone, and global access required to transform high-potential vision into durable market leadership.

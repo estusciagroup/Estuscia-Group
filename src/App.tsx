@@ -71,7 +71,7 @@ export default function App() {
         {/* Section 5: Startup Financial Planning Pipeline */}
         <PipelineSection />
 
-        {/* Section 6: Why Choose Estuscia Group LLP */}
+        {/* Section 6: Why Choose Estuscia Group */}
         <WhyChooseUs />
 
         {/* Section 7: Leadership & Key Team */}

@@ -1,4 +1,4 @@
-ESTUSCIA GROUP LLP
+ESTUSCIA GROUP
 
 Corporate Website Structure & Content
 
@@ -12,7 +12,7 @@ Building Businesses. Creating Opportunities. Empowering the Future.
 
 Sub Heading
 
-Estuscia Group LLP is a diversified business ecosystem focused on financial services, business consulting, technology, media, trade, and startup development. We help entrepreneurs, businesses, and investors build sustainable long-term growth through strategic solutions.
+Estuscia Group  is a diversified business ecosystem focused on financial services, business consulting, technology, media, trade, and startup development. We help entrepreneurs, businesses, and investors build sustainable long-term growth through strategic solutions.
 
 CTA Buttons
 
@@ -25,7 +25,7 @@ CTA Buttons
 
 About Us
 
-Estuscia Group LLP is a multi-business ecosystem committed to building innovative companies across multiple industries. Our mission is to create businesses that solve real-world challenges while empowering entrepreneurs, startups, and organizations with strategic financial, legal, and operational support.
+Estuscia Group  is a multi-business ecosystem committed to building innovative companies across multiple industries. Our mission is to create businesses that solve real-world challenges while empowering entrepreneurs, startups, and organizations with strategic financial, legal, and operational support.
 
 We believe sustainable growth is achieved through transparency, innovation, and strong business foundations.
 
@@ -87,7 +87,6 @@ Financial Services
 Legal Services
 
 * Company Registration
-* LLP & Private Limited Support
 * Business Agreements
 * Partnership Agreements
 * Legal Documentation

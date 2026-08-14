@@ -46,7 +46,7 @@ export default function ProcessSection() {
             Our Proven Process
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
-            How Estuscia Group LLP collaborates with enterprise clients, founders, and investors to engineer sustainable value.
+            How Estuscia Group collaborates with enterprise clients, founders, and investors to engineer sustainable value.
           </p>
         </div>
 

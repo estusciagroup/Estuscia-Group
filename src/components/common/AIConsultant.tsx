@@ -18,7 +18,7 @@ export default function AIConsultant() {
         {
           id: "welcome",
           role: "model",
-          text: "Welcome to Estuscia Group LLP! I am your **AI Executive Consultant**.\n\nHow can I assist you today? I can provide details regarding our **Business Ecosystem**, **Startup Financial Planning Pipeline**, **Corporate Consulting Services**, or **Global Trade Operations**.\n\nFeel free to ask any question or request information on partnering with Estuscia!",
+          text: "Welcome to Estuscia Group! I am your **AI Executive Consultant**.\n\nHow can I assist you today? I can provide details regarding our **Business Ecosystem**, **Startup Financial Planning Pipeline**, **Corporate Consulting Services**, or **Global Trade Operations**.\n\nFeel free to ask any question or request information on partnering with Estuscia!",
           timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
         }
       ]);

@@ -213,7 +213,7 @@ export default function EcosystemSection() {
             Diversified Verticals Driving Synergy & Scale
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
-            Estuscia Group LLP operates nine integrated ecosystem firms designed to support every phase of commercial expansion, capital engineering, creative design, enterprise technology, e-commerce, fashion, global trade, and luxury retail.
+            Estuscia Group operates nine integrated ecosystem firms designed to support every phase of commercial expansion, capital engineering, creative design, enterprise technology, e-commerce, fashion, global trade, and luxury retail.
           </p>
         </div>
 

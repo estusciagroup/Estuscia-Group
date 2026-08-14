@@ -1,5 +1,5 @@
 /**
- * Shared Type Definitions for Estuscia Group LLP Corporate Portal
+ * Shared Type Definitions for Estuscia Group Corporate Portal
  */
 
 export interface ChatMessage {

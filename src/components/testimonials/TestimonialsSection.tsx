@@ -7,7 +7,7 @@ const testimonials: Testimonial[] = [
     clientName: "Marcus Sterling",
     role: "Founder & CEO",
     company: "Apex Pay Solutions",
-    quote: "Estuscia Group LLP transformed our fintech startup from a local pilot into an institutional-grade company. Their venture studio co-built our tech stack while their financial arm structured our $2.5M seed round.",
+    quote: "Estuscia Group transformed our fintech startup from a local pilot into an institutional-grade company. Their venture studio co-built our tech stack while their financial arm structured our $2.5M seed round.",
     avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200",
     sector: "Fintech"
   },
@@ -46,7 +46,7 @@ export default function TestimonialsSection() {
             Partner & Founder Endorsements
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
-            Read how Estuscia Group LLP empowers ambitious entrepreneurs, corporations, and institutional investors across sectors.
+            Read how Estuscia Group empowers ambitious entrepreneurs, corporations, and institutional investors across sectors.
           </p>
         </div>
 

@@ -107,7 +107,7 @@ export default function ContactSection() {
           <div className="lg:col-span-5 space-y-8 p-8 rounded-3xl bg-slate-950 text-white border border-purple-500/30 shadow-2xl">
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-purple-400">Headquarters</span>
-              <h3 className="text-2xl font-black text-white mt-1">Estuscia Group LLP</h3>
+              <h3 className="text-2xl font-black text-white mt-1">Estuscia Group</h3>
               <p className="text-xs text-slate-300 mt-2 leading-relaxed">
                 A multi-business ecosystem driving sustainable growth across finance, consulting, tech, trade, and venture incubation.
               </p>
@@ -121,7 +121,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Registered Office</h4>
-                  <p className="text-sm font-semibold text-white mt-0.5">Estuscia Group LLP</p>
+                  <p className="text-sm font-semibold text-white mt-0.5">Estuscia Group</p>
                   <p className="text-xs text-slate-300">Hilite Business Park, Calicut</p>
                 </div>
               </div>

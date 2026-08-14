@@ -28,7 +28,7 @@ export default function HeroSection() {
             {/* Top Pill / Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 dark:bg-purple-950/80 border border-purple-200 dark:border-purple-500/30 text-purple-800 dark:text-purple-300 text-xs font-extrabold uppercase tracking-widest shadow-xs">
               <Sparkles className="h-4 w-4 text-purple-600 dark:text-purple-400 shrink-0" />
-              <span>Estuscia Group LLP • Corporate Business Ecosystem</span>
+              <span>Estuscia Group • Corporate Business Ecosystem</span>
             </div>
 
             {/* Headline */}
@@ -42,7 +42,7 @@ export default function HeroSection() {
 
             {/* Sub Heading */}
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              Estuscia Group LLP is a diversified business ecosystem focused on financial services, business consulting, technology, media, trade, and startup development. We help entrepreneurs, businesses, and investors build sustainable long-term growth through strategic solutions.
+              Estuscia Group is a diversified business ecosystem focused on financial services, business consulting, technology, media, trade, and startup development. We help entrepreneurs, businesses, and investors build sustainable long-term growth through strategic solutions.
             </p>
 
             {/* CTA Buttons */}
@@ -87,7 +87,7 @@ export default function HeroSection() {
               <div className="relative rounded-2xl overflow-hidden aspect-[16/10] sm:aspect-[4/3] bg-slate-100 dark:bg-slate-900">
                 <img
                   src={heroImg}
-                  alt="Estuscia Group LLP Strategic Ecosystem"
+                  alt="Estuscia Group Strategic Ecosystem"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-95"
                   referrerPolicy="no-referrer"
                 />

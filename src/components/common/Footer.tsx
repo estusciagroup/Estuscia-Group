@@ -40,14 +40,14 @@ export default function Footer() {
             >
               <img
                 src={logoImg}
-                alt="Estuscia Group LLP Logo"
+                alt="Estuscia Group Logo"
                 className="h-16 sm:h-20 lg:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
             </div>
 
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
-              Estuscia Group LLP is a diversified business ecosystem focused on financial services, business consulting, technology, media, trade, and startup development. Building sustainable long-term value through strategic solutions.
+              Estuscia Group is a diversified business ecosystem focused on financial services, business consulting, technology, media, trade, and startup development. Building sustainable long-term value through strategic solutions.
             </p>
 
             <div className="flex items-center gap-3 pt-1">

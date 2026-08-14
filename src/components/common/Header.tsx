@@ -38,7 +38,7 @@ export default function Header(
           >
             <img
               src={logoImg}
-              alt="Estuscia Group LLP Logo"
+              alt="Estuscia Group Logo"
               className="h-16 sm:h-20 lg:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               referrerPolicy="no-referrer"
             />

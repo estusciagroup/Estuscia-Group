@@ -19,13 +19,13 @@ export default function AboutSection() {
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-purple-700 dark:text-purple-300 bg-purple-50 dark:bg-purple-950/80 border border-purple-200 dark:border-purple-800">
             <Sparkles className="h-3.5 w-3.5 text-purple-600 dark:text-purple-400" />
-            <span>About Estuscia Group LLP</span>
+            <span>About Estuscia Group</span>
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             Building Innovative Companies Across Industries
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
-            Estuscia Group LLP is a multi-business ecosystem committed to building innovative companies across multiple industries. Our mission is to create businesses that solve real-world challenges while empowering entrepreneurs, startups, and organizations with strategic financial, legal, and operational support.
+            Estuscia Group  is a multi-business ecosystem committed to building innovative companies across multiple industries. Our mission is to create businesses that solve real-world challenges while empowering entrepreneurs, startups, and organizations with strategic financial, legal, and operational support.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export default function AboutSection() {
               Sustainable growth is achieved through transparency, innovation, and strong business foundations.
             </h4>
             <p className="text-xs sm:text-sm text-slate-300">
-              Every enterprise under Estuscia Group LLP is built on institutional governance, scalable technology, and risk-managed capital structuring.
+              Every enterprise under Estuscia Group is built on institutional governance, scalable technology, and risk-managed capital structuring.
             </p>
           </div>
           <button

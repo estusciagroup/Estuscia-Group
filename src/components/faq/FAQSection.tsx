@@ -5,8 +5,8 @@ import { FAQItem } from "../../types";
 const faqData: FAQItem[] = [
   {
     id: "faq-1",
-    question: "What is Estuscia Group LLP and how is it structured?",
-    answer: "Estuscia Group LLP is a diversified business ecosystem operating across five distinct verticals: Financial Services, Business Consulting, Tech & Media, Global Trade & Commerce, and Venture Studio. Each vertical functions as a specialized entity while cross-leveraging shared capital, legal governance, and technology infrastructure.",
+    question: "What is Estuscia Group and how is it structured?",
+    answer: "Estuscia Group is a diversified business ecosystem operating across five distinct verticals: Financial Services, Business Consulting, Tech & Media, Global Trade & Commerce, and Venture Studio. Each vertical functions as a specialized entity while cross-leveraging shared capital, legal governance, and technology infrastructure.",
     category: "ecosystem"
   },
   {
@@ -23,7 +23,7 @@ const faqData: FAQItem[] = [
   },
   {
     id: "faq-4",
-    question: "How can investors partner with Estuscia Group LLP?",
+    question: "How can investors partner with Estuscia Group?",
     answer: "Accredited private equity partners, angel syndicates, and institutional funds can co-invest alongside Estuscia across vetted venture studio startups, real estate assets, and trade financing liquidity facilities.",
     category: "partnerships"
   },

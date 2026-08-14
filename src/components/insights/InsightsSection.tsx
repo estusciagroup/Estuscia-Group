@@ -7,7 +7,7 @@ const articles: InsightArticle[] = [
     id: "article-1",
     title: "Structuring Early-Stage Startup Capital in High-Volatility Markets",
     summary: "Discover how hybrid debt-equity syndication and milestone escrow accounts protect valuation while securing necessary runway for tech ventures.",
-    content: "When navigating early-stage venture building in volatile macro environments, traditional equity dilution can severely impair long-term founder alignment. Estuscia Group LLP advocates a structured capital approach: combining non-dilutive bridge financing with equity option tranches tied strictly to technical and commercial milestones. This methodology ensures capital efficiency, maintains valuation defense, and aligns investor return horizons.",
+    content: "When navigating early-stage venture building in volatile macro environments, traditional equity dilution can severely impair long-term founder alignment. Estuscia Group advocates a structured capital approach: combining non-dilutive bridge financing with equity option tranches tied strictly to technical and commercial milestones. This methodology ensures capital efficiency, maintains valuation defense, and aligns investor return horizons.",
     category: "Venture Capital",
     date: "October 14, 2025",
     readTime: "5 min read",
