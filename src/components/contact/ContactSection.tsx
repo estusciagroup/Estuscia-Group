@@ -145,7 +145,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Corporate Hotline</h4>
-                  <p className="text-sm font-semibold text-white mt-0.5">+91 7907046955</p>
+                  <p className="text-sm font-semibold text-white mt-0.5">(+91) 9633329669 | 9633359669</p>
                   {/* <p className="text-xs text-slate-400">Direct Executive Support Line</p> */}
                 </div>
               </div>
