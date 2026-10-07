@@ -33,8 +33,8 @@ export default function ContactSection() {
 
     try {
       await emailjs.send(
-        "service_estuscia2026",
-        "template_estuscia2026",
+        "support_estuscia_2026",
+        "template_estuscia_new",
         {
           full_name: formData.fullName,
           email: formData.email,
@@ -133,7 +133,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Email Communications</h4>
                   <a href="mailto:contact@estuscia.com" className="text-sm font-semibold text-purple-300 hover:underline">
-                    estusciagroup@gmail.com
+                    support@estuscia.com
                   </a>
                   <p className="text-xs text-slate-400">Inquiries answered within 24 business hours</p>
                 </div>

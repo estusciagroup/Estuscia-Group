@@ -57,7 +57,7 @@ export default function Footer() {
               <a href="https://twitter.com" target="_blank" rel="noreferrer" className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-purple-500 transition-all">
                 <Twitter className="h-4 w-4" />
               </a>
-              <a href="mailto:estusciagroup@gmail.com" className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-purple-500 transition-all">
+              <a href="mailto:support@estuscia.com" className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-purple-500 transition-all">
                 <Mail className="h-4 w-4" />
               </a>
             </div>

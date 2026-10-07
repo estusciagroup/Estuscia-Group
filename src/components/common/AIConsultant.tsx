@@ -88,7 +88,7 @@ export default function AIConsultant() {
       const fallbackMsg: ChatMessage = {
         id: `fallback-${Date.now()}`,
         role: "model",
-        text: `My apologies, but my intelligence core is experiencing high capacity. Let me confirm the official details: \n\n- **Investment Models**: 40 Days (10%), 5 Months (50%), 8 Months (82%). \n- **Minimum Capital**: ₹10,000. \n- **Contact Channel**: +91 7907 046 955 or estusciagroup@gmail.com.\n\nPlease feel free to leave an inquiry in our form and our human advisor will call you shortly!`,
+        text: `My apologies, but my intelligence core is experiencing high capacity. Let me confirm the official details: \n\n- **Investment Models**: 40 Days (10%), 5 Months (50%), 8 Months (82%). \n- **Minimum Capital**: ₹10,000. \n- **Contact Channel**: +91 7907 046 955 or support@estuscia.com.\n\nPlease feel free to leave an inquiry in our form and our human advisor will call you shortly!`,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       };
       setMessages(prev => [...prev, fallbackMsg]);

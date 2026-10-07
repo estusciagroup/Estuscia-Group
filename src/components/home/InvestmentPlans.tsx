@@ -319,7 +319,7 @@ export default function InvestmentPlans({ onSelectPlan }: InvestmentPlansProps) 
                       </span>
                       <span className="flex items-center gap-1.5">
                         <Mail className="h-3.5 w-3.5 text-sky-500 shrink-0" />
-                        <span className="font-mono text-slate-700 dark:text-slate-300 text-[10px]">estusciagroup@gmail.com</span>
+                        <span className="font-mono text-slate-700 dark:text-slate-300 text-[10px]">support@estuscia.com</span>
                       </span>
                     </div>
                     <div className="space-y-1">

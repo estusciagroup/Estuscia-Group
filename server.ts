@@ -123,7 +123,7 @@ app.post("/api/gemini/chat", async (req, res) => {
   if (!ai) {
     // Elegant fallback if API key is missing
     return res.json({
-      text: `Hello! Thank you for inquiring about Estuscia Group. I am operating in offline mode right now as the backend key is being configured. \n\nTo answer your question directly based on our official prospectus: Estuscia Group offers 3 primary wealth creation models: \n1. **40-Day Plan**: 10% Return (Short-term liquidity) \n2. **5-Month Plan**: 50% Return (10% Monthly Option) \n3. **8-Month Plan**: 82% Return (10.25% Monthly Option) \n\nFor personalized onboarding, please give us a call at **+91 7907 046 955** or email us at **estusciagroup@gmail.com**. You can also submit the inquiry form right here on our page!`
+      text: `Hello! Thank you for inquiring about Estuscia Group. I am operating in offline mode right now as the backend key is being configured. \n\nTo answer your question directly based on our official prospectus: Estuscia Group offers 3 primary wealth creation models: \n1. **40-Day Plan**: 10% Return (Short-term liquidity) \n2. **5-Month Plan**: 50% Return (10% Monthly Option) \n3. **8-Month Plan**: 82% Return (10.25% Monthly Option) \n\nFor personalized onboarding, please give us a call at **+91 7907 046 955** or email us at **support@estuscia.com**. You can also submit the inquiry form right here on our page!`
     });
   }
 
@@ -180,7 +180,7 @@ Instructions:
     console.error("Gemini API error:", error);
     res.status(500).json({
       error: "Failed to query Gemini API",
-      text: "I am experiencing some connectivity issues with my advanced AI core. However, I can confirm that our 30-day investment program offers a fixed 50% profit share on investments starting from ₹10,000. Please reach out to our team at +91 7907 046 955 or estusciagroup@gmail.com."
+      text: "I am experiencing some connectivity issues with my advanced AI core. However, I can confirm that our 30-day investment program offers a fixed 50% profit share on investments starting from ₹10,000. Please reach out to our team at +91 7907 046 955 or support@estuscia.com."
     });
   }
 });
